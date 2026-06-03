@@ -10,6 +10,10 @@ A robust, industry-standard End-to-End (E2E) automation framework built for an E
 * **CI/CD:** GitHub Actions
 * **Reporting:** Mochawesome HTML Reports
 
+## 📊 Test Execution Report
+*(Mochawesome HTML Report Output)*
+![Mochawesome Report](./docs/report.png)
+
 ## 📂 Framework Structure
 - `cypress/e2e/` - Contains all test spec files
 - `cypress/pages/` - Page Object Model classes (Getters and Actions)
@@ -22,5 +26,7 @@ A robust, industry-standard End-to-End (E2E) automation framework built for an E
 3. Run in interactive mode: `npx cypress open`
 4. Run in headless mode (with reports): `npx cypress run`
 
-## 📊 CI/CD & Reporting
-This project is integrated with **GitHub Actions**. Upon every push to the main branch, tests are executed automatically in a cloud environment. **Mochawesome** is configured to generate detailed HTML test reports after execution.
+## ⚙️ CI/CD Pipeline (GitHub Actions)
+This project is fully integrated with **GitHub Actions**. Upon every push or pull request to the main branch, the Cypress test suite is automatically triggered and executed in a cloud container.
+
+![CI/CD Pipeline](./docs/cicd.png)
