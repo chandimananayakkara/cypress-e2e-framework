@@ -17,4 +17,9 @@ export default class LoginPage{
         this.passwordField.type(password)
         this.loginButton.click()
     }
+
+    public get errorMessage(){
+        return cy.get('h3[data-test="error"]')
+
+    }
 }
